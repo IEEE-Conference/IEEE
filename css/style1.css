@@ -1,0 +1,173 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.collegelogo{
+    width:180px;
+    height:50px;
+    /* position:relative; */
+    /* left:50%; */
+    /* transform:translate(-50%); */
+    /* margin: 5px; */
+}
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+}
+
+nav li{
+    text-align: center;
+    display: inline-block;
+    line-height: 8vh;
+    font-size: 97%;
+    color: #F63131;
+}
+nav{
+	background-color:#A42A2E;
+	text-align: center;
+	margin-bottom: 0%;
+}
+nav li a{
+    text-decoration: none;
+    color:white;
+    
+}
+nav img{
+    float:right;
+    padding:5px 5px 0 0;
+}
+
+
+
+.slider{
+    overflow:hidden;
+    position:relative;
+    padding-bottom: 10px;
+}
+.slider div{
+    position:relative;
+    width:200%;
+    margin:0;
+    left:0;
+    animation: 8s slider infinite;
+}
+.slider div img{
+    float:left;
+    width:50%;
+    height:100vh;
+    filter: brightness(0.5);
+    
+}
+
+@keyframes slider{
+    0% {
+        left:0;
+    } 
+    45% {
+        left:0;
+    }
+    50% {
+        left:-100%;
+    }
+    95% {
+        left:-100%;
+    }
+    100% {
+        left:0;
+    }
+
+}
+
+.headings{
+    position:absolute;
+    left:50%;
+    top:40%; 
+    text-align:center;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+.headings h1{
+    font-weight:bold;
+}
+.subHeading1, .subHeading2{
+    position:absolute;
+    text-align:center;
+    top:75%;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+.subHeading1{
+    left:5%;
+}
+.subHeading2{
+    right:5%;
+}
+
+
+
+
+.container{
+    background-image: url("images/background1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+.aboutCollege img{
+    float:left;
+    width:100px;
+    height:100px;
+    padding:50px 0 0 100px;
+}
+.aboutCollege h1{
+    float:right;
+    padding:50px 100px 0 0;
+    color: #0E7AC4
+}
+.aboutCollege section{
+    padding:190px 100px 50px 100px;
+    text-align:justify;
+    color:black;
+    font-size: 18px;
+}
+
+.aboutDept h1{
+    float:left;
+    padding:50px 0 0 100px;
+    color: #0E7AC4;
+}
+.aboutDept img{
+    float:right;
+    padding:50px 100px 0 0;
+    width:150px;
+    height:100px;
+}
+.aboutDept section{
+    padding:190px 100px 40px 100px;
+    text-align:justify;
+    color:black;
+    font-size: 18px;
+
+}
+
+
+.aboutCon h1{
+    color:#0E7AC4;
+    text-align: center;
+    padding:40px 0 0px 0;
+}
+.aboutCon section{
+    text-align:justify;
+    color:black;
+    font-size:18px;
+    padding: 40px 100px 50px 100px;
+}
+
+
