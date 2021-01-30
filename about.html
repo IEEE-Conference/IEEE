@@ -47,15 +47,18 @@ a {
 	width: 90%;
 	margin: 0 auto;
 	padding-top: 70px;
-	position: relative;
+	
 }
 
-input, section {
+input {
   clear: both;
   padding-top: 10px;
   display: none;
 }
-
+ section {
+  clear: both;
+  padding-top: 10px;
+}
 label {
   font-weight: 700;
   font-size: 95%;
@@ -112,7 +115,7 @@ label .fa {
   }
   
   .tab_container {
-    width: 98%;
+    width: 95%;
   }
 }
 
@@ -131,10 +134,25 @@ label .fa {
 
 	 </style>
 	</head>
-	<body>		
+	<body>
+		<div class="parallax">
+        <section id="homepage">
+        <header>
+            <img class="collegelogo"  src="img/cc.jpg">
+            <nav class="topnav" >
+               <ul>
+                    <li><a href="index.html" class="navtabhome">HOME</a></li>
+                    <li><a href="#aboutinstitute" class="navtabs">ABOUT US</a></li>
+                    <li><a href="authors.html" class="navtabs">FOR AUTHORS</a></li>
+                    <li><a href="#aboutconference" class="navtabs">CONTACT US</a>></li>
+		    </ul>
+                <img class="ieeelogo" align="right" src="img/IEEE logo 2.svg">
+            </nav>
+        </header>
+		</div>
 		<div class="tab_container">
 			<input id="tab1" type="radio" name="tabs" checked>
-			<label for="tab1"><i class="fa fa-code"></i><span>Organizing <br>Committee</span></label>
+			<label for="tab1"><i class="fa fa-code"></i><span>Organizing Committee</span></label>
 
 			<input id="tab2" type="radio" name="tabs">
 			<label for="tab2"><i class="fa fa-pencil-square-o"></i><span>Technical Program Committee</span></label>
@@ -147,7 +165,7 @@ label .fa {
 
 			<section id="content1" class="tab-content">
 		      	<p>
-				<ul style="list-style:none;">
+		      		<ul style="list-style: none;">
 		      		<li><b>Chief Patron</b><br>Shri Suneel Galgotia, Chairman</li><br>
 		      		<li><b>Patron</b><br>Shri Dhruv Galgotia, CEO <br>Prof.(Dr.) Vinay Kumar Pathak, VC, AKTU</li><br>
 		      		<li><b>Honorary General Chair</b><br>Prof. (dr.) Brijesh Singh, Director, GCET</li><br>
@@ -160,7 +178,7 @@ label .fa {
 	      			<li><b>Publication Committee</b><br>Dr.Sunil Kumar Bharti,IT,GCET<br>prof.U. Hariharan,IT,GCET<br>Prof.K. Rajkumar,IT,GCET</li><br>
 	      			<li><b>Publicity Committee</b><br>Dr. Veena Mittal,IT,GCET<br>Prof.Bhawna Singh,IT,GCET</li><br>
 	      			<li><b>Finance Committee</b><br>Prof. Ranjit Kumar,IT,GCET<br>Prof.Gagan Gupta,IT,GCET</li><br>
-	      			<li><b>Hospitality Committee</b><br>Prof.Kanika Singhal,IT,GCET<br>Prof.Rekha Baghel,IT,GCET<br>Prof.Sanjay Kumar,IT,GCET<BR>Prof. Rahil Singh,IT,GCET</li><br>
+	      			<li><b>Hospitality Committee</b><br>Prof.Kanika Singhal,IT,GCET<br>Prof.Rekha Baghel,IT,GCET<br>Prof.Sanjay Kumar,IT,GCET<br>Prof. Rahil Singh,IT,GCET</li><br>
 	      			<li><b>Transport and Accomodation Committee</b><br>Prof.Vivek Kesari,IT,GCET<br>Prof.Javed Miya,IT,GCET</li><br>
 	      			<li><b>Website Committee</b><br>Prof.Nilotpal Pathak,IT,GCET<br>Prof.U. Hariharan,IT,GCET</li><br>
 	      			<li><b>Sponsorship/Media Committee</b><br>Prof.Ravi Shankar Pathak,IT,GCET<br>Prof.Vivek Agarwal,IT,GCET<br>Prof.Suresh Kumar,IT,GCET</li><br>
@@ -179,7 +197,7 @@ label .fa {
 	      				<br>Akshita Awasthi,IT,GCET
 	      				<br>Radhika Bhanot,IT,GCET
 	      				<br>Surabhi Sonkar,IT,GCET</li><br>
-				</ul>
+	      			</ul>>
 		      	</p>
 			</section>
 
