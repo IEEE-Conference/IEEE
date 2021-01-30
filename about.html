@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Committees</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width , initial-scale=1.0">
+	 <style type="text/css">
+	 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	font-family: sans-serif;
+	background: #f6f9fa;
+}
+
+h1 {
+	color: #ccc;
+	text-align: center;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+
+
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
+}
+
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label {
+  font-weight: 700;
+  font-size: 95%;
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4{
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: black;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 900px) {
+  label span {
+    display: none;
+  }
+  
+  .tab_container {
+    width: 98%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}
+
+	 </style>
+	</head>
+	<body>
+		
+		<div class="tab_container">
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label for="tab1"><i class="fa fa-code"></i><span>Organizing Committee</span></label>
+
+			<input id="tab2" type="radio" name="tabs">
+			<label for="tab2"><i class="fa fa-pencil-square-o"></i><span>Technical Program Committee</span></label>
+
+			<input id="tab3" type="radio" name="tabs">
+			<label for="tab3"><i class="fa fa-bar-chart-o"></i><span>International Advisory Committee</span></label>
+
+			<input id="tab4" type="radio" name="tabs">
+			<label for="tab4"><i class="fa fa-folder-open-o"></i><span>Advisory <br>Board</span></label>
+
+			<section id="content1" class="tab-content">
+		      	<p>
+		      		<li><b>Chief Patron</b><br>Shri Suneel Galgotia, Chairman</li><br>
+		      		<li><b>Patron</b><br>Shri Dhruv Galgotia, CEO <br>Prof.(Dr.) Vinay Kumar Pathak, VC, AKTU</li><br>
+		      		<li><b>Honorary General Chair</b><br>Prof. (dr.) Brijesh Singh, Director, GCET</li><br>
+	      			<li><b>Convener and Conference Organizing Chair</b><br>Prof.(Dr.) anjeev Kumar Singh, HOD(IT), GCET</li><br>
+	      			<li><b>Conference General Chair</b><br>Dr. Sandeep Saxena</li><br>
+	      			<li><b>Conference Co-Organizing Chairs</b><br>Dr. Sandhya Katiyar, IT, GCET<br>Dr. Sunil Kumar Bharti, IT, GCET</li><br>
+	      			<li><b>Technical Program Chairs</b><br>Prof.(Dr.) Vishnu Sharma, HOD(CSE),GCET<br>Dr. Gagan Tiwari,HOD(MCA
+	      				),GCET<br>Dr. Deepak Ghambhir,IT,GCET<br>Dr.Veena Mittal,IT,GCET</li><br>
+	      			<li><b>Organising Committee</b><br>Prof.Rekha Baghel,IT,GCET<br>Dr.Inderpreet Kaur,CSE,GCET<br>Prof.Swasti Singhal,IT,GCET<br>Dr.Vineet Kumar,CSE,GCET</li><br>
+	      			<li><b>Publication Committee</b><br>Dr.Sunil Kumar Bharti,IT,GCET<br>prof.U. Hariharan,IT,GCET<br>Prof.K. Rajkumar,IT,GCET</li><br>
+	      			<li><b>Publicity Committee</b><br>Dr. Veena Mittal,IT,GCET<br>Prof.Bhawna Singh,IT,GCET</li><br>
+	      			<li><b>Finance Committee</b><br>Prof. Ranjit Kumar,IT,GCET<br>Prof.Gagan Gupta,IT,GCET</li><br>
+	      			<li><b>Hospitality Committee</b><br>Prof.Kanika Singhal,IT,GCET<br>Prof.Rekha Baghel,IT,GCET<br>Prof.Sanjay Kumar,IT,GCET<BR>Prof. Rahil Singh,IT,GCET</li><br>
+	      			<li><b>Transport and Accomodation Committee</b><br>Prof.Vivek Kesari,IT,GCET<br>Prof.Javed Miya,IT,GCET</li><br>
+	      			<li><b>Website Committee</b><br>Prof.Nilotpal Pathak,IT,GCET<br>Prof.U. Hariharan,IT,GCET</li><br>
+	      			<li><b>Sponsorship/Media Committee</b><br>Prof.Ravi Shankar Pathak,IT,GCET<br>Prof.Vivek Agarwal,IT,GCET<br>Prof.Suresh Kumar,IT,GCET</li><br>
+	      			<li><b>Student Organizing Committee</b>
+	      				<br>Shashank Agarwal,IT,GCET
+	      				<br>Raghav Garg,IT,GCET
+	      				<br>Shivankar Vaish,IT,GCET
+	      				<br>Ayesha Falak,IT,GCET
+	      				<br>Pundreek Saurabh Srivastava,IT,GCET
+	      				<br>Rohit Rao,IT,GCET
+	      				<br>Sneh Agarwal,IT,GCET
+	      				<br>Shayan Alam,IT,GCET
+	      				<br>Anshika,IT,GCET
+	      				<br>Rochan Tripathi,IT,GCET
+	      				<br>Rohan Singh,IT,GCET
+	      				<br>Akshita Awasthi,IT,GCET
+	      				<br>Radhika Bhanot,IT,GCET
+	      				<br>Surabhi Sonkar,IT,GCET</li><br>
+		      	</p>
+			</section>
+
+			<section id="content2" class="tab-content">
+		      	<p>Dr. D. P. Vidyarthi, JNU, New Delhi<br>
+				Dr. Sunil Kumar Bharti, GCET, Greater Noida<br>
+				Dr. Shashank Srivastava, MNNIT, Allahabad<br>
+				Dr. Deepak Ghambhir, GCET, Greater Noida<br>
+				Dr. Manoj Kumar, UPES, Dehradun, India<br>
+				Dr. Ashok Kumar Pradhan, SRM University, AP<br>
+				Dr. Udai Shanker, MMMUT Gorakhpur<br>
+				Dr. Ankur Saxena, S P University, Gujrat<br>
+				Dr. Veena Mittal, GCET, Greater Noida<br>
+				Dr. R. K. Yadav, DTU, Delhi<br>
+				Dr. Ved Prakash Mishra, Amity University, Dubai<br>
+				Dr. Nanhey Singh, NSUT, New Delhi<br>
+				Dr. K. N. Mishra, BITS. Mesra<br>
+				Dr. Sanjay Jain, NIT Kurukshetra<br>
+				Dr Sanayveer Singh, NIT Jalandhar<br>
+				Dr Vimal Kumar, MIET Merrut<br>
+				Dr. Smrity Dwivedi, IIT (BHU), Varanasi<br>
+				Dr. Kishor P. Sarawadekar, IIT (BHU), Varanasi<br>
+				Dr. Tara Chand Amgoth, IIT (BHU), Varanasi<br>
+				Dr. Somak Bhattacharyya, IIT (BHU), Varanasi<br>
+				Dr. Manoj Kumar Meshram, IIT (BHU), Varanasi<br>
+				Dr. Sandeep Singh Sengar, University of Copenhagen, Denmark<br>
+				Dr Nazia Tabassum, Jamia Millia Islamia, New Delhi<br>
+				Dr Ruhul Amin, IIIT Naya Raipur</p>
+			</section>
+
+			<section id="content3" class="tab-content">
+		      	<p>
+		      		Prof. J. Ram Kumar, IIT Kanpur<br>
+					Prof. Fushuan Wen, Institute of Power Economics and Information, Zhejiang University,China<br>
+					Prof. Jai Govind, AIT, Bangkok<br>
+					Prof. Brij N. Singh, North Dakota, USA<br>
+					Prof. N. P. Padhy, IIT Rorkee<br>
+					Prof. Deepak Garg, Bennett University, India<br>
+					Prof. Gayadhar Panda, NIT Meghalaya, India<br>
+					Prof. Marcin Paprzycki, Polish Academy of Sciences, Poland<br>
+					Prof. Vincenzo Piuri, Universita’ degli Studi di Milano via Bramante, Italy<br>
+					Prof. S. C. Sharma, Indian Institute of Technology, Roorkee, India<br>
+		      	</p>
+			</section>
+
+			<section id="content4" class="tab-content">
+						<p>
+			Prof. Brijesh Singh, GCET, Greater Noida<br>
+			Prof. Praveen Maduri, GCET Greater Noida<br>
+			Prof. Lakshmanan M, GCET Greater Noida<br>
+			Prof. Mohd Asim Qadri, GCET Greater Noida<br>
+			Prof. Md. Danish Equbal, GCET Greater Noida<br>
+			Prof. Rishav Garg, GCET Greater Noida<br>
+			Prof. A. Ambikapathy, GCET Greater Noida<br>
+			Prof Sansar Singh Chauhan, GU, Greater Noida<br>
+			Prof Sanjay Chauhan, GU, Greater Noida<br>
+			Prof Usha Chauhan, GU, Greater Noida<br>
+			Prof Sanjeev Pippal, GL Bajaj, Greater Noida<br>
+			Prof Ajay Shankar Singh GU, Greater Noida<br>
+			Prof Prashant Jhori GU, Greater Noida<br>
+			Prof Thirunavukkarasu K , GU, Greater Noida<br>
+			Prof J N Singh, GU, Greater Noida<br>
+			Prof Rani Astya, SU, Greater Noida<br>
+			Dr. Karan Singh, JNU, New Delhi<br>
+			Dr Sushil Dohre, JNU, New Delhi<br>
+			Dr. S. B. Goyal, City University, Malaysia</p>
+		      </p>
+			</section>
+
+		</div>
+	</body>
+	</html>
