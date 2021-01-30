@@ -27,7 +27,7 @@
  		 list-style: none;
 		}
 
-		ul li::before {
+		.listt li::before {
   		content: "\2022";
   		color: #0E7AC4;
   		font-weight: bold;
@@ -88,10 +88,12 @@ tr:nth-child(even) {
         <header>
             <img class="collegelogo"  src="img/cc.jpg">
             <nav class="topnav" >
+		    <ul>
                     <li><a href="index.html" class="navtabhome">HOME</a></li>
                     <li><a href="#aboutinstitute" class="navtabs">ABOUT US</a></li>
                     <li><a href="authors.html" class="navtabs">FOR AUTHORS</a></li>
                     <li><a href="#aboutconference" class="navtabs">CONTACT US</a></li>
+		    </ul>
                 <img class="ieeelogo" align="right" src="img/IEEE logo 2.svg">
             </nav>
         </header>
@@ -114,7 +116,7 @@ Computing, Communication and Technology</h2>
 Prospective authors are invited to register and submit the manuscripts of their original research contributions and review articles in the following areas:<br><br>
 
 The topics of the ICRAAE-2021 include, but are not limited to:</p>
-<ul>
+<ul class="listt">
 	<li>Machine learning, Deep learning, Digital Image Processing</li>
 	<li>Evolutionary Computing</li>
 	<li>Distributed and Parallel Processing</li>
