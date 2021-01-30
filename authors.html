@@ -1,270 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Author</title>
+	<title>Committees</title>
 	<meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width , initial-scale=1.0">
-	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="css/style.css">
 	 <style type="text/css">
-	 	.page{
-	 		margin-left: 8%;
-	 		margin-right: 8%;
-	 		text-align: justify;
+	 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
-	 	}
-	 	body
-	 	{
-	 		background-image: url("img/bg.png");
-	 		background-repeat: no-repeat;
-	 		background-attachment: fixed;
-	 		
-	 	}
-	 	.headings{
-	 		text-align: center;
-	 	}
-	 	ul {
- 		 list-style: none;
-		}
-
-		.lis li::before {
-  		content: "\2022";
-  		color: #0E7AC4;
-  		font-weight: bold;
-  		display: inline-block; 
-  		width: 1em;
-  		margin-left: -1em;
- }
- 	ol {
- 		 list-style: none;
-		}
-
-		ol li::before {
-  		content: "\02192";
-  		color: #0E7AC4;
-  		font-weight: bold;
-  		display: inline-block; 
-  		width: 2em;
-  		margin-left: -2em;
- }
- .det{
- 	list-style: none;
- }
- .det li::before {
-  		content: "\021AA";
-  		color: red;
-  		font-weight: bold;
-  		display: inline-block; 
-  		width: 2em;
-  		margin-left: -2em;
- }
- table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	font-family: sans-serif;
+	background: #f6f9fa;
+}
+
+h1 {
+	color: #ccc;
+	text-align: center;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+
+
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+	
+}
+
+input,section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+ .parallax {
+  display: block;
+}
+label {
+  font-weight: 700;
+  font-size: 95%;
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
   text-align: center;
-  padding: 8px;
+  background: #f0f0f0;
 }
-td:nth-child(1){
-	text-align: left;
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4{
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: black;
+  border-bottom: 2px solid #f0f0f0;
 }
-tr:nth-child(even) {
-  background-color: #dddddd;
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
 }
-#link{
-	background-color: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+.tab_container .tab-content h3  {
+  text-align: center;
 }
+
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 900px) {
+  label span {
+    display: none;
+  }
+  
+  .tab_container {
+    width: 95%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}
+
 	 </style>
-</head>
-<body>
-	<div class="parallax">
+	</head>
+	<body>
+		<div class="parallax">
         <section id="homepage">
         <header>
             <img class="collegelogo"  src="img/cc.jpg">
             <nav class="topnav" >
                <ul>
                     <li><a href="index.html" class="navtabhome">HOME</a></li>
-                    <li><a href="about.html" class="navtabs">ABOUT US</a></li>
+                    <li><a href="#aboutinstitute" class="navtabs">ABOUT US</a></li>
                     <li><a href="authors.html" class="navtabs">FOR AUTHORS</a></li>
-                    <li><a href="#aboutconference" class="navtabs">CONTACT US</a>></li>
+                    <li><a href="#aboutconference" class="navtabs">CONTACT US</a></li>
 		    </ul>
                 <img class="ieeelogo" align="right" src="img/IEEE logo 2.svg">
             </nav>
         </header>
 		</div>
-	<section class="page">
-		<!--Center Headings-->
-	<section class="headings">
-	<h2>International Conference on Advancements<br> in
-Computing, Communication and Technology</h2>
-<h4>(ICACCT-2022)<br>
-(IEEE Conference)</h4>
-<h5>Orgainzed by:<br><b>Department of Information Technology</b></h5><br>
-</section>
+		<div class="tab_container">
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label for="tab1"><i class="fa fa-code"></i><span>Organizing Committee</span></label>
 
-<!--Call for Papers-->
-<section class="call">
-<h3 style="color: #0E7AC4;">Call for Papers</h3>
-<p style="font-variant: 'Segoe UI';width: 62vw;">ICACCT-2022 is soliciting original, previously unpublished and high quality research papers addressing research challenges and advances in the tracks mentioned below. The maximum allowable length of the paper is 6 pages (including figures and references) for regular research articles strictly in IEEE DOUBLE COLUMN FORMAT. Articles will be Double-Blind Peer-Reviewed by three experts to decide its suitability for publication in the conference. Acceptance of papers will be communicated to authors by email.<br><br>
+			<input id="tab2" type="radio" name="tabs">
+			<label for="tab2"><i class="fa fa-pencil-square-o"></i><span>Technical Program Committee</span></label>
 
-Prospective authors are invited to register and submit the manuscripts of their original research contributions and review articles in the following areas:<br><br>
+			<input id="tab3" type="radio" name="tabs">
+			<label for="tab3"><i class="fa fa-bar-chart-o"></i><span>International Advisory Committee</span></label>
 
-The topics of the ICACCT-2022 include, but are not limited to:</p>
-<ul class="lis">
-	<li>Machine learning, Deep learning, Digital Image Processing</li>
-	<li>Evolutionary Computing</li>
-	<li>Distributed and Parallel Processing</li>
-	<li>Cloud and Green Computing</li>
-	<li>IOT</li>
-	<li>Data Mining</li>
-	<li>Advance Database Management System</li>
-	<li>Big Data, Data Analysis</li>
-	<li>Machine Learning and Artificial Intelligence</li>
-	<li>Mobile Computing, Artificial Neural Network</li>
-	<li>MANETs</li>
-	<li>Computer Networking</li>
-	<li>Cyber-physical system security</li>
-	<li>Virtual Reality</li>
-	<li>Network Security</li>
-	<li>WSN</li>
-	<li>Multimedia Applications</li>
-	<li>Web Intelligence &amp; Semantics</li>
-	<li>Ubiquitous Computing &amp; Networking</li>
-	<li>Software Engineering &amp; Information Systems</li>
-	<li>Intelligent Systems &amp; Automation</li>
-	<li>Hardware design &amp; Communication</li>
-	<li>Signal &amp; Image Processing</li>
-	<li>VLSI Design</li>
-	<li>Wireless Sensor Networks, Security</li>
-	<li>Robotics &amp; Automation</li>
-	<li>Communication Network and Systems</li>
-	<li>Smart Grid Technologies</li>
-	<li>Smart buildings Technologies</li>
-	<li>New Measurement technologies and Application</li>
-	<li>Fuzzy &amp; Neural Networks </li>
-	<li>Data Analytics</li>
-	<li>Statistical Analysis</li>
-	<li>Embedded Systems</li>
-	<li>Bio-medical Engineering</li>
-	<li>Genomics Sequencing</li>
-	<li>Control Systems</li>
-	<li>Power engineering (such as electrical generators, electric power transmission)</li>
-	<li>Signal processing (such as electronic filter, digital filter, video and audio signal processing, radar, sonar, beam forming)</li>
-</ul><br>
-</section>
+			<input id="tab4" type="radio" name="tabs">
+			<label for="tab4"><i class="fa fa-folder-open-o"></i><span>Advisory <br>Board</span></label>
 
-<!--Guidelines-->
-<section class="guide">
-	<h2 style="color: #0E7AC4;">Guidelines</h2>
-	<p style="font-variant: 'Segoe UI';">Soft copy (.doc, (or).docx, and .pdf formats) of the full-length papers not exceeding six pages (File size should not be more than 3 MB) and as per IEEE style shall be submitted for the conference along with the plagiarism responsibility undertaking in the format available by uploading them via our conference website. The Proceedings of ICACCT-2022 will be submitted for inclusion in the IEEE Digital Library Xplore®.</p>
-</section><br>
+			<section id="content1" class="tab-content">
+		      	<p>
+		      		<ul style="list-style: none;">
+		      		<li><b>Chief Patron</b><br>Shri Suneel Galgotia, Chairman</li><br>
+		      		<li><b>Patron</b><br>Shri Dhruv Galgotia, CEO <br>Prof.(Dr.) Vinay Kumar Pathak, VC, AKTU</li><br>
+		      		<li><b>Honorary General Chair</b><br>Prof. (dr.) Brijesh Singh, Director, GCET</li><br>
+	      			<li><b>Convener and Conference Organizing Chair</b><br>Prof.(Dr.) anjeev Kumar Singh, HOD(IT), GCET</li><br>
+	      			<li><b>Conference General Chair</b><br>Dr. Sandeep Saxena</li><br>
+	      			<li><b>Conference Co-Organizing Chairs</b><br>Dr. Sandhya Katiyar, IT, GCET<br>Dr. Sunil Kumar Bharti, IT, GCET</li><br>
+	      			<li><b>Technical Program Chairs</b><br>Prof.(Dr.) Vishnu Sharma, HOD(CSE),GCET<br>Dr. Gagan Tiwari,HOD(MCA
+	      				),GCET<br>Dr. Deepak Ghambhir,IT,GCET<br>Dr.Veena Mittal,IT,GCET</li><br>
+	      			<li><b>Organising Committee</b><br>Prof.Rekha Baghel,IT,GCET<br>Dr.Inderpreet Kaur,CSE,GCET<br>Prof.Swasti Singhal,IT,GCET<br>Dr.Vineet Kumar,CSE,GCET</li><br>
+	      			<li><b>Publication Committee</b><br>Dr.Sunil Kumar Bharti,IT,GCET<br>prof.U. Hariharan,IT,GCET<br>Prof.K. Rajkumar,IT,GCET</li><br>
+	      			<li><b>Publicity Committee</b><br>Dr. Veena Mittal,IT,GCET<br>Prof.Bhawna Singh,IT,GCET</li><br>
+	      			<li><b>Finance Committee</b><br>Prof. Ranjit Kumar,IT,GCET<br>Prof.Gagan Gupta,IT,GCET</li><br>
+	      			<li><b>Hospitality Committee</b><br>Prof.Kanika Singhal,IT,GCET<br>Prof.Rekha Baghel,IT,GCET<br>Prof.Sanjay Kumar,IT,GCET<br>Prof. Rahil Singh,IT,GCET</li><br>
+	      			<li><b>Transport and Accomodation Committee</b><br>Prof.Vivek Kesari,IT,GCET<br>Prof.Javed Miya,IT,GCET</li><br>
+	      			<li><b>Website Committee</b><br>Prof.Nilotpal Pathak,IT,GCET<br>Prof.U. Hariharan,IT,GCET</li><br>
+	      			<li><b>Sponsorship/Media Committee</b><br>Prof.Ravi Shankar Pathak,IT,GCET<br>Prof.Vivek Agarwal,IT,GCET<br>Prof.Suresh Kumar,IT,GCET</li><br>
+	      			<li><b>Student Organizing Committee</b>
+	      				<br>Shashank Agarwal,IT,GCET
+	      				<br>Raghav Garg,IT,GCET
+	      				<br>Shivankar Vaish,IT,GCET
+	      				<br>Ayesha Falak,IT,GCET
+	      				<br>Pundreek Saurabh Srivastava,IT,GCET
+	      				<br>Rohit Rao,IT,GCET
+	      				<br>Sneh Agarwal,IT,GCET
+	      				<br>Shayan Alam,IT,GCET
+	      				<br>Anshika,IT,GCET
+	      				<br>Rochan Tripathi,IT,GCET
+	      				<br>Rohan Singh,IT,GCET
+	      				<br>Akshita Awasthi,IT,GCET
+	      				<br>Radhika Bhanot,IT,GCET
+	      				<br>Surabhi Sonkar,IT,GCET</li><br>
+	      			</ul>
+		      	</p>
+			</section>
 
-<!--Downloads-->
-<section class="download">
-	<h2 style="color: #0E7AC4;float: right">Downloads</h2>
-	<p style="font-variant: 'Segoe UI';float: right;">Soft copy (.doc, (or).docx, and .pdf formats) of the full-length papers not exceeding six pages (File size should not be more than 3 MB) and as per IEEE style shall be submitted for the conference along with the plagiarism responsibility undertaking in the format available by uploading them via our conference website. The Proceedings of ICACCT-2022 will be submitted for inclusion in the IEEE Digital Library Xplore®.</p>
-</section><br>
+			<section id="content2" class="tab-content">
+		      	<p>Dr. D. P. Vidyarthi, JNU, New Delhi<br>
+				Dr. Sunil Kumar Bharti, GCET, Greater Noida<br>
+				Dr. Shashank Srivastava, MNNIT, Allahabad<br>
+				Dr. Deepak Ghambhir, GCET, Greater Noida<br>
+				Dr. Manoj Kumar, UPES, Dehradun, India<br>
+				Dr. Ashok Kumar Pradhan, SRM University, AP<br>
+				Dr. Udai Shanker, MMMUT Gorakhpur<br>
+				Dr. Ankur Saxena, S P University, Gujrat<br>
+				Dr. Veena Mittal, GCET, Greater Noida<br>
+				Dr. R. K. Yadav, DTU, Delhi<br>
+				Dr. Ved Prakash Mishra, Amity University, Dubai<br>
+				Dr. Nanhey Singh, NSUT, New Delhi<br>
+				Dr. K. N. Mishra, BITS. Mesra<br>
+				Dr. Sanjay Jain, NIT Kurukshetra<br>
+				Dr Sanayveer Singh, NIT Jalandhar<br>
+				Dr Vimal Kumar, MIET Merrut<br>
+				Dr. Smrity Dwivedi, IIT (BHU), Varanasi<br>
+				Dr. Kishor P. Sarawadekar, IIT (BHU), Varanasi<br>
+				Dr. Tara Chand Amgoth, IIT (BHU), Varanasi<br>
+				Dr. Somak Bhattacharyya, IIT (BHU), Varanasi<br>
+				Dr. Manoj Kumar Meshram, IIT (BHU), Varanasi<br>
+				Dr. Sandeep Singh Sengar, University of Copenhagen, Denmark<br>
+				Dr Nazia Tabassum, Jamia Millia Islamia, New Delhi<br>
+				Dr Ruhul Amin, IIIT Naya Raipur</p>
+			</section>
 
-<!--Registration Fee-->
-<section class="register">
-	<h2 style="color: #0E7AC4;text-align: center;clear: both;">Registration Fee</h2>
-	<!--Table 1-->
-	<table>
-		<h3 style="color: #0E7AC4;">Indian Delegates (Rs.)</h3>
-  <tr>
-    <th>Category</th>
-    <th>Early Registration Deadline (March 15, 2022)</th>
-    <th>Late Registration</th>
-  </tr>
-  <tr>
-    <td>Students</td>
-    <td>4000</td>
-    <td>5000</td>
-  </tr>
-  <tr>
-    <td>Academia/Academician</td>
-    <td>5500</td>
-    <td>6500</td>
-  </tr>
-  <tr>
-    <td>Industry Participant</td>
-    <td>11000</td>
-    <td>12000</td>
-  </tr>
-  <tr>
-    <td>Participant/Attendee</td>
-    <td>1500</td>
-    <td></td>
-  </tr>
-</table>
-<!--Table 2-->
-<table>
-	<h3 style="color: #0E7AC4;">International Delegates (US$)</h3>
-	<h4 style="color: #0E7AC4;">Category Early Registration Deadline (March 15, 2022) Late Registration</h4>
-  <tr>
-    <th>Category</th>
-    <th>Early Registration Deadline (March 15, 2022)</th>
-    <th>Late Registration</th>
-  </tr>
-  <tr>
-    <td>Students</td>
-    <td>100$</td>
-    <td>150$</td>
-  </tr>
-  <tr>
-    <td>Academia/Academician</td>
-    <td>200$</td>
-    <td>300$</td>
-  </tr>
-  <tr>
-    <td>Industry Participant</td>
-    <td>400$</td>
-    <td>450$</td>
-  </tr>
-  <tr>
-    <td>Participant/Attendee</td>
-    <td>Yet to decide</td>
-    <td></td>
-  </tr>
-</table>
-</section><br>
-<!--Notes-->
-<ol>
-	<li>The accommodation will be arranged on paid basis in the nearby Hostels as per the availability and requirements. Group Pick up and Drop facility will be available from/to such places to/from the venue. If delegates have specific requirements, the same can be arranged on paid basis.</li>
-	<li>The registration fee includes Conference kit, lunches, tea/coffee. The registration fee is to be paid online. Conference Fee DOES NOT includes Transportation and Accommodation charges.</li>
-	<li>The registration Fee is non refundable once paid.</li>
-	<li>Only one author (co-author) can attend the conference against a single registration.</li>
-</ol>
+			<section id="content3" class="tab-content">
+		      	<p>
+		      		Prof. J. Ram Kumar, IIT Kanpur<br>
+					Prof. Fushuan Wen, Institute of Power Economics and Information, Zhejiang University,China<br>
+					Prof. Jai Govind, AIT, Bangkok<br>
+					Prof. Brij N. Singh, North Dakota, USA<br>
+					Prof. N. P. Padhy, IIT Rorkee<br>
+					Prof. Deepak Garg, Bennett University, India<br>
+					Prof. Gayadhar Panda, NIT Meghalaya, India<br>
+					Prof. Marcin Paprzycki, Polish Academy of Sciences, Poland<br>
+					Prof. Vincenzo Piuri, Universita’ degli Studi di Milano via Bramante, Italy<br>
+					Prof. S. C. Sharma, Indian Institute of Technology, Roorkee, India<br>
+		      	</p>
+			</section>
 
-<!--Bank Details-->
-<section class="detailss">
-	<h3 style="color:Tomato;">Details of Onilne Fee Payment</h3>
-	<ol class="det">
-	<li>Name of the Payee :</li>
-	<li>Name of the Bank :</li>
-	<li>Branch Name :</li>
-	<li>Bank Account Number :</li>
-	<li>MICR Code of the Bank :</li>
-	<li>IFSC Code Number :</li>
-	<li>Branch Code Number :</li>	
-</ol>
-</section>
-<!--Submission Guideline-->
-<section class="submission">
-	<h2 style="color: #0E7AC4;">Submission Guidelines</h2>
-	<p style="font-variant: 'Segoe UI';">Documents to be submitted:</p>
-	<li style="margin-left: 4%;">Full length paper in both .pdf and .doc formats as per IEEE guidelines and format. (File size should not be more than 3 MB)</li>
-	<p style="font-variant: 'Segoe UI';">All the submitted papers will be sent for peer review and the corresponding author will be notified the outcome of the review process. If reviewers recommend for further improvements in the paper, the paper will be sent back to the corresponding author and the revised version should be submitted with in fifteen days on the date of receipt</p>
-	<p style="font-variant: 'Segoe UI';">Conference proceedings may be eligible for inclusion in the IEEE Xplore® Digital Library, once they meet the requirements of an IEEE quality review. IEEE reserves the right to not publish any proceedings not meeting these standards.</p>
-	<p style="font-variant: 'Segoe UI';">The appropriate copyright clearance code notice is to appear on the bottom of the first page of each paper according to the guidelines set forth in the Cataloging/Copyright Instructions for an IEEE Conference Proceeding. Detailed instructions can be found at:</p>
-	  <p><a href="http://www.ieee.org/portal/pages/about/documentation/copyright/cfrmlink.html"><button class="w3-button w3-cyan">Link to the page</button></a></p>
-</section>
-		<br><br>
-</section>
-</body>
+			<section id="content4" class="tab-content">
+						<p>
+			Prof. Brijesh Singh, GCET, Greater Noida<br>
+			Prof. Praveen Maduri, GCET Greater Noida<br>
+			Prof. Lakshmanan M, GCET Greater Noida<br>
+			Prof. Mohd Asim Qadri, GCET Greater Noida<br>
+			Prof. Md. Danish Equbal, GCET Greater Noida<br>
+			Prof. Rishav Garg, GCET Greater Noida<br>
+			Prof. A. Ambikapathy, GCET Greater Noida<br>
+			Prof Sansar Singh Chauhan, GU, Greater Noida<br>
+			Prof Sanjay Chauhan, GU, Greater Noida<br>
+			Prof Usha Chauhan, GU, Greater Noida<br>
+			Prof Sanjeev Pippal, GL Bajaj, Greater Noida<br>
+			Prof Ajay Shankar Singh GU, Greater Noida<br>
+			Prof Prashant Jhori GU, Greater Noida<br>
+			Prof Thirunavukkarasu K , GU, Greater Noida<br>
+			Prof J N Singh, GU, Greater Noida<br>
+			Prof Rani Astya, SU, Greater Noida<br>
+			Dr. Karan Singh, JNU, New Delhi<br>
+			Dr Sushil Dohre, JNU, New Delhi<br>
+			Dr. S. B. Goyal, City University, Malaysia</p>
+		      </p>
+			</section>
+
+		</div>
+	</body>
+	</html>
