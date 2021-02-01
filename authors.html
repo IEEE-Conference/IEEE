@@ -103,6 +103,21 @@ nav{
 	text-align: center;
 	margin-bottom: 0%;
 }
+		 .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.guide{
+	clear: both;
+}
 		 @media only screen and (max-width:770px){
 			 .ieeelogo{
 				display:none;
@@ -138,7 +153,9 @@ Computing, Communication and Technology</h2>
 Prospective authors are invited to register and submit the manuscripts of their original research contributions and review articles in the following areas:<br><br>
 
 The topics of the ICRAAE-2021 include, but are not limited to:</p>
-<ul class="listt">
+<div class="row">
+  <div class="column" >
+<ul>
 	<li>Machine learning, Deep learning, Digital Image Processing</li>
 	<li>Evolutionary Computing</li>
 	<li>Distributed and Parallel Processing</li>
@@ -155,13 +172,19 @@ The topics of the ICRAAE-2021 include, but are not limited to:</p>
 	<li>Virtual Reality</li>
 	<li>Network Security</li>
 	<li>WSN</li>
+	
 	<li>Multimedia Applications</li>
 	<li>Web Intelligence &amp; Semantics</li>
 	<li>Ubiquitous Computing &amp; Networking</li>
 	<li>Software Engineering &amp; Information Systems</li>
+	</ul>
+	  </div>
+  <div class="column" >
+  <ul>
 	<li>Intelligent Systems &amp; Automation</li>
 	<li>Hardware design &amp; Communication</li>
 	<li>Signal &amp; Image Processing</li>
+
 	<li>VLSI Design</li>
 	<li>Wireless Sensor Networks, Security</li>
 	<li>Robotics &amp; Automation</li>
@@ -178,7 +201,9 @@ The topics of the ICRAAE-2021 include, but are not limited to:</p>
 	<li>Control Systems</li>
 	<li>Power engineering (such as electrical generators, electric power transmission)</li>
 	<li>Signal processing (such as electronic filter, digital filter, video and audio signal processing, radar, sonar, beam forming)</li>
-</ul><br>
+</ul>
+</div>
+</div>
 </section>
 
 <!--Guidelines-->
