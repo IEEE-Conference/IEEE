@@ -69,15 +69,7 @@ hr{
 	border:none;
 	height: 2px;
 }
-.grid-child.address{ 
-	padding: 35px;
-	background-color: #0e7ac4;
-	color: #ffffff;
-	width:40%;
-	border:5px #ffffff;
-	border-style: double;	
-	font-size: 85;
-}
+
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
