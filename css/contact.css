@@ -1,0 +1,51 @@
+body{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+h3{
+	color: #ffcc00;
+}
+
+input,textarea{
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	opacity: 0.5;
+	width: 90%;
+
+}
+
+.sendbutton{
+	width: 200px;
+	opacity: 1;
+	padding: 10px;
+	border: 0px;
+	background-color: #ffcc00;
+	color: #ffffff;
+}
+.sendbutton:hover{
+	background-color: #c0c0c0;
+}
+hr{
+	background-color: #ffffff;
+	width: 60px;
+	border:none;
+	height: 2px;
+}
+.grid-child.address{
+	padding: 35px;
+	background-color: #ffcc00;
+	color: #ffffff;
+	width:40%;
+	border:5px #ffffff;
+	border-style: double;	
+	font-size: 85;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0px;
+}
+
+
+
