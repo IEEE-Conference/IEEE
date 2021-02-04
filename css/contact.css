@@ -32,7 +32,7 @@ hr{
 	border:none;
 	height: 2px;
 }
-.grid-child.address{
+.grid-child.address{ 
 	padding: 35px;
 	background-color: #ffcc00;
 	color: #ffffff;
