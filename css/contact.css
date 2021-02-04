@@ -5,6 +5,12 @@
 h3{
 	color: #0e7ac4;
 }
+.ieeelogo{
+    padding: 5px;
+    float:right;
+    margin-left: auto;
+    height: 40px;
+}
 nav li {
     text-decoration: none;
     display: inline-block;
