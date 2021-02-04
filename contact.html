@@ -1,142 +1,45 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width , initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <style type="text/css">
-.container {
-  display: inline-block;
-  height: 100%;
-  justify-content: center;
-  float: right;
-margin-top: 5vh;
-margin-right: 2vw;
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>contact us</title>
+		<link rel="stylesheet" type="text/css" href="contact.css">
+	</head>
+	<body>
+		<h2>LEAVE A MESSAGE</h2>
+		<h3>Feel Free To Contact Us</h3>
+		<div class="grid-container">
+			<div class="grid-child form">
+				<input type="text" name="fullname" value="Your Full Name*"><br>
+				<input type="text" name="mobilenumber" maxlength="10" value="Your Mobile Number"><br>
+				<input type="email" name="email" value="Your E-mail*"><br>
+				<input type="text" name="subject" value="Subject*"><br>
+				<textarea name="message" value="Your Message" rows="10"></textarea><br>
+				
+				
+			</div>
+			<div class="grid-child address">
+				
+				<h4>ADDRESS FOR <br>COMMUNICATION <br></h4>
+				<hr align="left">
+				CONFERENCE CHAIR,<br>ICCCI 2021<br>
+				Galgotia College Of <br>Engineering &
+				Technology,<br>
+				Knowledge Park I, Greater Noida,<br>
+				Uttar Pradesh 201310, India.<br>
+				Mobile:+91-120-4370000<br>
+				Email:Info@Iccci.In<br>
+					
+			</div>	
+			<center><input type="button" name="sendmsg" class="sendbutton" onclick="sendmsg" value="SEND MESSAGE"></center><br>	
+		</div>
+		<div class="main">	
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23210.59720745817!2d77.50119125684321!3d28.437044111462235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x548952c90b21eae1!2sEngineering%20Colleges%20in%20Noida%20(Galgotia%20Engineering%20College%20Counseling)!5e0!3m2!1sen!2sin!4v1612262953297!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-}
-
-.rectangle {
-  display: inline-block;
-  float: right;
-  width: 100vw;
-  height: 20vh;
-  background: #0E7AC4;
-  transform: scale(0);
-  border-radius: 50%;
-  color: white;
-  opacity: 0;
-  overflow: hidden;
-  -webkit-animation: scale-in 0.3s ease-out forwards, expand 0.35s 0.25s ease-out forwards;
-          animation: scale-in 0.3s ease-out forwards, expand 0.35s 0.25s ease-out forwards;
-}
-
-.notification-text {
-  display: inline-block;
-  align-items: center;
-  padding: 0 16px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  -webkit-animation: fade-in 0.65s ease-in forwards;
-          animation: fade-in 0.65s ease-in forwards;
-}
-
-@-webkit-keyframes scale-in {
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes scale-in {
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes expand {
-  50% {
-    width: 350px;
-    border-radius: 6px;
-  }
-  100% {
-    width: 300px;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -1px rgba(0, 0, 0, 0.12);
-  }
-}
-@keyframes expand {
-  50% {
-    width: 600px;
-    border-radius: 6px;
-  }
-  100% {
-    width: 550px;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -1px rgba(0, 0, 0, 0.12);
-  }
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
-    @media only screen and(max-width:770px){
-      iframe{
-      display:block;
-        float:center;
-      }
-      .container, .rectangle{
-      display:block;
-      }
-    }
-  </style>
- </head>
- <body>
-   <section class="text-gray-700 body-font relative" style="margin-top:0px;" id="contact">
-  <div class="absolute inset-0 bg-gray-300">
-<iframe width="750" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Galgotias%20College%20of%20Engineering%20and%20Technology%2CKnowledge%20Park%20III%20Greater%20Noida&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-  
-</section> 
-<!--Contact details-->
-
-<div class="container">
-  <div class="rectangle">
-    <div class="notification-text">
-      <i class='fas fa-map-marker-alt' style='font-size:36px;margin-top: 5%;'></i>
-      <span>&nbsp;&nbsp;GALGOTIAS COLLEGE OF ENGINEERING AND TECHNOLOGY<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge Park I, Greater Noida, Uttar Pradesh 201310</span>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="rectangle">
-    <div class="notification-text">
-      <i class='fas fa-phone-alt' style='font-size:36px;margin-top: 5%;'></i>
-      <span>&nbsp;&nbsp;CALL US ON <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone No.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone No.</span>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="rectangle">
-    <div class="notification-text">
-     <i class='far fa-comment-dots' style='font-size:36px;margin-top: 5%;'></i>
-      <span>&nbsp;&nbsp;SEND A MESSAGE<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:akshitaawasthi@gmail.com">info@galgotiacollege.edu</a></span>
-    </div>
-  </div>
-</div>
- </body>
-  </html>
+			<div>
+				<div>
+				<img src="">	
+				</div>
+			</div>
+	</body>
