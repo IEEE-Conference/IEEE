@@ -3,7 +3,7 @@ body{
 	margin-right: 10%;
 }
 h3{
-	color: #ffcc00;
+	color: #0e7ac4;
 }
 
 input,textarea{
@@ -20,7 +20,7 @@ input,textarea{
 	opacity: 1;
 	padding: 10px;
 	border: 0px;
-	background-color: #ffcc00;
+	background-color: #0e7ac4;
 	color: #ffffff;
 }
 .sendbutton:hover{
@@ -34,7 +34,7 @@ hr{
 }
 .grid-child.address{ 
 	padding: 35px;
-	background-color: #ffcc00;
+	background-color: #0e7ac4;
 	color: #ffffff;
 	width:40%;
 	border:5px #ffffff;
