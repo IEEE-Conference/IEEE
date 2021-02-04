@@ -1,4 +1,4 @@
-body{
+.grid-container , .grid-child.address , .sendbutton , hr{
 	margin-left: 10%;
 	margin-right: 10%;
 }
