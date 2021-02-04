@@ -18,9 +18,8 @@ nav li{
     line-height: 8vh;
     font-size: 97%;
 }
-nav li a{
+nav a{
     text-decoration: none;
-	
 }
 nav{
 	background-color:#A42A2E;
@@ -34,7 +33,7 @@ input,textarea{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	opacity: 0.5;
-	width: 90%;
+	width: 100%;
 
 }
 
@@ -56,13 +55,15 @@ hr{
 	height: 2px;
 }
 .grid-child.address{ 
-	padding: 35px;
+	padding: 50px;
 	background-color: #0e7ac4;
 	color: #ffffff;
 	width:40%;
 	border:5px #ffffff;
 	border-style: double;	
-	font-size: 85;
+	font-size: 15px;
+    	margin-left: 120px;
+    	line-height: 1.6;
 }
 .grid-container{
 	display: grid;
