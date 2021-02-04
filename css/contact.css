@@ -5,6 +5,25 @@ body{
 h3{
 	color: #0e7ac4;
 }
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+}
+
+nav li{
+    text-align: center;
+    display: inline-block;
+    line-height: 8vh;
+    font-size: 97%;
+    color: #F63131;
+}
+nav{
+	background-color:#A42A2E;
+	text-align: center;
+	margin-bottom: 0%;
+}
 
 input,textarea{
 	padding: 10px;
