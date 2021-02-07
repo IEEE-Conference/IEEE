@@ -233,4 +233,99 @@ nav{
     padding: 40px 100px 50px 100px;
 }
 
+/* Media Queries */
 
+@media(max-width:858px){
+    .headings h1{
+        font-size:98%;
+    }
+    .headings h3{
+        font-size:98%;
+    }
+    .subHeading1 h3{
+        font-size:98%;
+    }
+    .subHeading1 h2{
+        font-size:98%;
+    }
+    .subHeading2 h3{
+        font-size:98%;
+    }
+    .subHeading2 h2{
+        font-size:98%;
+    }
+
+
+
+    .aboutCollege img{
+        width:70px;
+        height:70px;
+        padding:20px 0 0 50px;
+    }
+    .aboutCollege h1{
+        font-size:22px;
+        padding:25px 50px 0 0;
+    }
+    .aboutCollege section{
+        padding:110px 50px 60px 50px;
+        font-size:16px;
+    }
+
+
+    .aboutDept h1{
+        font-size:22px;
+        padding:10px 0 0 50px;
+    }
+    .aboutDept img{
+        width:110px;
+        height:70px;
+        padding:5px 45px 0 0;
+    }
+    .aboutDept section{
+        padding:110px 50px 60px 50px;
+        font-size:16px;
+    }
+
+}
+
+/* navbar responsive */
+
+@media screen and (max-width: 841px){
+    .show-menu-btn, .hide-menu-btn{
+        display: block;
+    }
+    .show-menu-btn{
+        position:absolute;
+        right:40px;
+    }
+    .menu{
+        position:relative;
+        width:100%;
+        height:250px;
+        background: #A42A2E;
+        /* right:-100%; */
+        left:0;
+        top:0px;
+        text-align:center;
+        padding:80px 0;
+        line-height:normal;
+        transition:700ms;
+        z-index:1;
+        transform:scaleY(0);
+        transform-origin: top;
+    }
+    .menu a{
+        display:block;
+        padding:20px;
+    }
+    .hide-menu-btn{
+        position:absolute;
+        top:25px;
+        right:37px;
+    }
+    #chk:checked ~ .menu{
+        right:0;
+        transform:scaleY(1);
+        transform-origin: top;
+    }
+}
