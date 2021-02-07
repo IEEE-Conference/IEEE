@@ -6,41 +6,104 @@ body{
     padding:0;
 }
 
-.collegelogo{
-    width:180px;
-    height:50px;
-    /* position:relative; */
-    /* left:50%; */
-    /* transform:translate(-50%); */
-    /* margin: 5px; */
-}
-nav li {
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    margin-left: 2%;
-}
-
-nav li{
-    text-align: center;
-    display: inline-block;
-    line-height: 8vh;
-    font-size: 97%;
-    color: #F63131;
-}
 nav{
-	background-color:#A42A2E;
-	text-align: center;
-	margin-bottom: 0%;
+    height:50px;
+    background-color:#A42A2E;
 }
-nav li a{
-    text-decoration: none;
-    color:white;
+.menu{
+    /* float:right; */
+    position:absolute;
+    right:30%;
+    line-height:20px;
+}
+.menu a{
+    color:#FBFF49;
+    text-decoration:none;
+    padding:0 40px;
     
 }
-nav img{
+.show-menu-btn, .hide-menu-btn{
+    transition:400ms;
+    color:white;
+    cursor:pointer;
+    display:none;
+}
+.show-menu-btn{
     float:right;
-    padding:5px 5px 0 0;
+}
+.show-menu-btn i{
+    line-height: 55px;
+}
+#chk{
+    position:absolute;
+    visibility:hidden;
+    z-index: -1111;
+}
+
+/* popup */
+
+.popup{
+    width:400px;
+    height:250px;
+    background-color:white;
+    position:fixed;
+    right:0;
+    bottom: 0;
+    z-index:99;
+    border-radius:48px 48px 48px 48px;
+    margin-right:10px;
+    transition: 800ms;
+}
+.popupHeading{
+    text-align:center;
+    font-weight:bold;
+    width:100%;
+    font-size:22px;
+    color:#FBFF49;
+    background-color:#A42A2E;
+    padding:10px 0;
+    border-radius: 48px 0 0 0;
+    transition:800ms;
+    cursor:pointer;
+}
+
+.cross{
+    position:absolute;
+    right:15px;
+    top:15px;
+    color:white;
+    cursor:pointer;
+    transition:800ms;
+}
+
+.dates{
+    display:flex;
+}
+
+.dateList ul{
+    list-style-type: none;
+}
+
+.dateList ul li{
+    line-height: 2;
+    font-weight:bold;
+}
+.dateList ul li:nth-child(3){
+    padding:5px 0;
+}
+
+.events ul{
+    list-style-type: none;
+    padding-right:10px;
+}
+
+.events ul li{
+    line-height: 2;
+    text-align: center;
+}
+.events ul li:nth-child(3){
+    line-height: 1;
+    padding:5px 0;
 }
 
 
