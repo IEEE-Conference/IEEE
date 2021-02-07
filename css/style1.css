@@ -60,6 +60,7 @@ nav{
     border-radius:48px 48px 48px 48px;
     margin-right:10px;
     transition: 800ms;
+    box-shadow:3px 3px 3px black;
 }
 .popupHeading{
     text-align:center;
