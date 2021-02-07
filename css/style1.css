@@ -5,6 +5,13 @@ body{
     margin:0;
     padding:0;
 }
+.collegeLogo{
+    position:relative;
+    left:50%;
+    transform:translate(-50%);
+    width:200px;
+    height:65px;
+}
 
 nav{
     height:50px;
