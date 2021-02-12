@@ -28,6 +28,116 @@ html{
 body{
     margin: auto;
 }
+
+.collegeLogo{
+    position:relative;
+    left:50%;
+    transform:translate(-50%);
+    width:180px;
+    height:55px;
+}
+
+nav{
+    height:50px;
+    background-color:#A42A2E;
+}
+.menu{
+    /* float:right; */
+    position:absolute;
+    right:27%;
+    line-height:20px;
+}
+.menu a{
+    color:#FBFF49;
+    text-decoration:none;
+    padding:0 25px;
+    
+}
+.show-menu-btn, .hide-menu-btn{
+    transition:400ms;
+    color:white;
+    cursor:pointer;
+    display:none;
+}
+.show-menu-btn{
+    float:right;
+}
+.show-menu-btn i{
+    line-height: 55px;
+}
+#chk{
+    position:absolute;
+    visibility:hidden;
+    z-index: -1111;
+}
+
+/* popup */
+
+.popup{
+    width:400px;
+    height:250px;
+    background-color:white;
+    position:fixed;
+    right:0;
+    bottom: 0;
+    z-index:99;
+    border-radius:48px 48px 48px 48px;
+    margin-right:10px;
+    transition: 800ms;
+}
+.popupHeading{
+    text-align:center;
+    font-weight:bold;
+    width:100%;
+    font-size:22px;
+    color:#FBFF49;
+    background-color:#A42A2E;
+    padding:10px 0;
+    border-radius: 48px 0 0 0;
+    transition:800ms;
+    cursor:pointer;
+}
+
+.cross{
+    position:absolute;
+    right:15px;
+    top:15px;
+    color:white;
+    cursor:pointer;
+    transition:800ms;
+}
+
+.dates{
+    display:flex;
+}
+
+.dateList ul{
+    list-style-type: none;
+}
+
+.dateList ul li{
+    line-height: 2;
+    font-weight:bold;
+}
+.dateList ul li:nth-child(3){
+    padding:5px 0;
+}
+
+.events ul{
+    list-style-type: none;
+    padding-right:10px;
+}
+
+.events ul li{
+    line-height: 2;
+    text-align: center;
+}
+.events ul li:nth-child(3){
+    line-height: 1;
+    padding:5px 0;
+}
+
+
 .parallax{
 	background:url('img/college.jpeg') no-repeat center;
 
@@ -35,16 +145,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-.topnav{
-    display: flex;
-    justify-content: center;
-    background:  #A42A2E;
-    color: #696969;
-    text-decoration: none;
-    height: 50px;
-    align-items: center;
-    overflow: hidden;
-}
+
 .mainpage{
     display: block;
     height: 768px;
@@ -125,20 +226,9 @@ body{
 
 
 
-nav ul{
-    list-style: none;
-    margin-left: auto;
-}
-nav li{
-    display: inline-flex;
-    }
 
-.collegelogo{
-    height: 50px;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 footer{
   position:relative;
   height: 100vh;
