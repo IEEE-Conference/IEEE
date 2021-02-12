@@ -20,8 +20,7 @@ nav{
 .menu{
     /* float:right; */
     position:absolute;
-    right:40%;
-    transform:translate(-50%);
+    right:30%;
     line-height:20px;
 }
 .menu a{
