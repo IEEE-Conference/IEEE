@@ -26,7 +26,7 @@ nav{
 .menu a{
     color:#FBFF49;
     text-decoration:none;
-    padding:0 30px;
+    padding:0 25px;
     
 }
 .show-menu-btn, .hide-menu-btn{
@@ -297,7 +297,7 @@ nav{
 
 /* navbar responsive */
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 800px){
     .show-menu-btn, .hide-menu-btn{
         display: block;
     }
