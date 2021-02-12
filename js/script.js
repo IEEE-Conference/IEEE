@@ -18,21 +18,31 @@ function homeHover(){
     document.querySelector(".aboutUsNav").style.opacity="0.6";
     document.querySelector(".authorsNav").style.opacity="0.6";
     document.querySelector(".contactNav").style.opacity="0.6";
+    document.querySelector(".speakerNav").style.opacity="0.6";
 }
 function aboutUsHover(){
     document.querySelector(".homeNav").style.opacity="0.6";
     document.querySelector(".authorsNav").style.opacity="0.6";
     document.querySelector(".contactNav").style.opacity="0.6";
+    document.querySelector(".speakerNav").style.opacity="0.6";
 }
 function authorsHover(){
     document.querySelector(".aboutUsNav").style.opacity="0.6";
     document.querySelector(".homeNav").style.opacity="0.6";
     document.querySelector(".contactNav").style.opacity="0.6";
+    document.querySelector(".speakerNav").style.opacity="0.6";
 }
 function contactHover(){
     document.querySelector(".aboutUsNav").style.opacity="0.6";
     document.querySelector(".authorsNav").style.opacity="0.6";
     document.querySelector(".homeNav").style.opacity="0.6";
+    document.querySelector(".speakerNav").style.opacity="0.6";
+}
+function speakerHover(){
+    document.querySelector(".aboutUsNav").style.opacity="0.6";
+    document.querySelector(".authorsNav").style.opacity="0.6";
+    document.querySelector(".homeNav").style.opacity="0.6";
+    document.querySelector(".contactNav").style.opacity="0.6";
 }
 
 
