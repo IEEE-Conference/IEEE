@@ -20,7 +20,7 @@ nav{
 .menu{
     /* float:right; */
     position:absolute;
-    left:50%;
+    right:40%;
     transform:translate(-50%);
     line-height:20px;
 }
