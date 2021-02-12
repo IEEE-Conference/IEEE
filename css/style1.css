@@ -297,7 +297,7 @@ nav{
 
 /* navbar responsive */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 985px){
     .show-menu-btn, .hide-menu-btn{
         display: block;
     }
