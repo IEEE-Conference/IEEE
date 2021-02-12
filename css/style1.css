@@ -20,7 +20,7 @@ nav{
 .menu{
     /* float:right; */
     position:absolute;
-    right:25%;
+    right:27%;
     line-height:20px;
 }
 .menu a{
@@ -297,7 +297,7 @@ nav{
 
 /* navbar responsive */
 
-@media screen and (max-width: 841px){
+@media screen and (max-width: 1100px){
     .show-menu-btn, .hide-menu-btn{
         display: block;
     }
