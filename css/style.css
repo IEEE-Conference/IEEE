@@ -12,6 +12,29 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
+.mainpage{
+    display: block;
+    height: 768px;
+    overflow: hidden;
+    margin:0;
+
+}
+
+html{
+	height: 100%;
+
+}
+body{
+    margin: auto;
+}
+.parallax{
+	background:url('img/college.jpeg') no-repeat center;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
 .topnav{
     display: flex;
     justify-content: center;
@@ -116,6 +139,193 @@ nav li{
     margin-left: auto;
     margin-right: auto;
 }
+footer{
+  position:relative;
+  height: 100vh;
+  width: 100%;
+  display:block;
+}
+footer::before{
+  background: url('img/college logo.svg') repeat;
+  opacity:1;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom:0px;
+  left:0px;
+}
+header{
+    text-align: center;
+    background-color: #ffffff;
+    height: 100px;
+    align-content: center;
+
+}
+.navtabs{
+    text-decoration: none;
+    color: #FBFF49;
+    padding: 25px;
+    text-align: center;
+}
+.navtabhome{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 25px;
+}
+.nav table{
+	border-spacing: 100px;
+}
+.ieeelogo{
+    padding: 5px;
+    float:right;
+    margin-left: auto;
+
+    height: 40px;
+}
+.div-main1{
+    height: 500px;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    text-align: center;
+    justify-items: center;
+    color: #C0C0C0;
+    padding: 65px;
+}
+.box {
+     /* Sit on top of the page content */
+     /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.8;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+}
+
+.center{
+
+    top:50%;
+}
+
+table{
+	padding: 10px;
+
+}
+.div-main3{
+    padding: 25px;
+}
+.gallogo{
+   	float: left;
+    margin-top: 50px;
+   	height: 120px;
+}
+.about-institute{
+   	margin-left: 80px;
+   	text-align: justify;
+    margin-top: 100px;
+}
+h2.about-institute{
+   	text-align: right;
+   	padding-bottom: 40px;
+}
+h2{
+   	color: darkblue;
+    opacity: 2;
+}
+.about-department{
+	text-align: justify;
+	margin-right: 80px;
+}        
+.about-conference{
+	text-align: justify;
+	padding-bottom: 100px;
+}
+h2.about-conference{
+	text-align: center;
+}
+
+
+
+.abti{
+    display: flex;
+    height: 768px;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+
+.abtd{
+    display: flex;
+    height: 768px;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+
+.abtc{
+    display: flex;
+    height: 768px;
+    overflow: hidden;
+    padding-bottom: 10px;
+
+}
+
+ .para {
+     height: 600px;
+     text-align: justify;
+     text-justify: inter-word;
+     font-size: 25px;
+     text-space:20px;
+     margin-left: 150px;
+     margin-right: 50px;
+     top: 50%;
+
+     justify-content:space-between;
+
+}
+
+.para1 {
+    height: 600px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 25px;
+    text-space:20px;
+    margin-left: 70px;
+    margin-right: 150px;
+    top: 50%;
+    justify-content:space-between;
+}
+.para2 {
+     height: 600px;
+     text-align: justify;
+     text-justify: inter-word;
+     font-size: 25px;
+     text-space:20px;
+     margin-left: 50px;
+     margin-right: 50px;
+     top: 50%;
+     justify-content:space-between;
+ }
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+.mainpage .row{
+    color: white;
+    justify-content:space-between;
+}
+
+
+
+
 footer{
   position:relative;
   height: 100vh;
