@@ -51,6 +51,7 @@ function hoverend(){
     document.querySelector(".aboutUsNav").style.opacity="1";
     document.querySelector(".authorsNav").style.opacity="1";
     document.querySelector(".contactNav").style.opacity="1";
+    document.querySelector(".speakerNav").style.opacity="1";
 }
 
 function unchk(){
