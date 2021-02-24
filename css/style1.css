@@ -113,7 +113,9 @@ nav{
     padding:5px 0;
 }
 
-
+.events li{
+    width:10vw;
+}
 
 .slider{
     overflow:hidden;
