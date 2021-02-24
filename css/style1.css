@@ -96,10 +96,10 @@ nav{
     font-weight:bold;
 }
 .dateList ul li:nth-child(3){
-    padding:5px 0;
+    padding:3px 0;
 }
 .dateList li{
-width:30vw;
+width:20vw;
 }
 .events ul{
     list-style-type: none;
