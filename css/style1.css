@@ -112,6 +112,7 @@ width:-10vw;
 }
 .events li{
 width:22vw;
+    text-align:left;
 }
 .events ul li:nth-child(3){
     line-height: 1;
