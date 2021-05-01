@@ -125,12 +125,12 @@ nav{
 
 .events ul{
     list-style-type: none;
-    padding-right:10px;
+    padding-right:9px;
 }
 
 .events ul li{
     line-height: 2;
-    text-align: center;
+    text-align: left;
 }
 .events ul li:nth-child(3){
     line-height: 1;
