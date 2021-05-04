@@ -15,7 +15,7 @@ body{
 
 nav{
     height:50px;
-    background-color:#A42A2E;
+    background-color:#3C358D;
 }
 .menu{
     /* float:right; */
@@ -24,7 +24,7 @@ nav{
     line-height:20px;
 }
 .menu a{
-    color:#FBFF49;
+    color:white;
     text-decoration:none;
     padding:0 25px;
     
@@ -66,8 +66,8 @@ nav{
     font-weight:bold;
     width:100%;
     font-size:22px;
-    color:#FBFF49;
-    background-color:#A42A2E;
+    color:white;
+    background-color:#3C358D;
     padding:10px 0;
     border-radius: 48px 0 0 0;
     transition:800ms;
