@@ -27,6 +27,7 @@ nav{
     color:white;
     text-decoration:none;
     padding:0 25px;
+    transition:300ms;
     
 }
 .show-menu-btn, .hide-menu-btn{
