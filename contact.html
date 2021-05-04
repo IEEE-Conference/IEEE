@@ -4,9 +4,21 @@
 		<meta charset="utf-8">
 		<title>contact us</title>
 		<!--link rel="stylesheet" type="text/css" href="css/contact.css"-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 		<style>
+			.bi::before {
+  display: inline-block;
+  content: "";
+  vertical-align: -.125em;
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+			@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
 			body
 	 	{
 	 		background-image: url("img/bg.png");
@@ -24,6 +36,7 @@
     text-align: center;
     margin-left: 2%;
 }
+
 h3{
 	color: #0e7ac4;
 }
@@ -57,6 +70,22 @@ nav{
 	width: 90%;
 
 }
+ .dbox .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #64ffda;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .dbox .icon span {
+      font-size: 20px;
+      color: #233554; }
+  .dbox .text {
+    width: calc(100% - 50px);
+    padding-left: 15px; }
+    .dbox .text span {
+      display: block;
+      line-height: 1.2; }
 
 .sendbutton{
 	width: 200px;
@@ -103,82 +132,78 @@ Computing, Communication and Technology</h2>
 <h5 style="float:left;margin-left:7%;font-size:120%;">Orgainzed by:<br><b>Department of Information Technology</b></h5><br>
 			<h5 style="float:right;margin-right:7%;font-size:120%;">Date of Conference:<br><b>22<sup>nd</sup> and 23<sup>rd</sup> April, 2022</b></h5><br><br><br>
 </section>
-		<section style="background-image:url('img/back.jpeg');background-repeat:repeat-x;text-align:center;width:80vw;height:30vh;margin-left:auto;margin-right:auto;"><a href="#abc"><button class="w3-button w3-cyan" style="color:black;opacity:1;margin-top:5%;">Contact Us</button></a></section>
-		<section style="margin-left:3%;">
-		<h2>LEAVE A MESSAGE</h2>
-		<h3>Feel Free To Contact Us</h3>
-		<div class="grid-container">
-			<div class="grid-child form">
-				<input type="text" name="fullname" value="Your Full Name*"><br>
-				<input type="text" name="mobilenumber" maxlength="10" value="Your Mobile Number*"><br>
-				<input type="email" name="email" value="Your E-mail*"><br>
-				<input type="text" name="subject" value="Subject*"><br>
-				<textarea name="message" value="Your Message" rows="10">Enter Your Message*</textarea><br>
-				
+		<section class="ftco-section contact-section ftco-no-pb mb-5" id="contact-section">
+			<div class="container">
+				<div class="row justify-content-center pb-3">
+					<div class="col-md-7 p-1 heading-section text-center">
+						<a href="#abc"><button class="w3-button w3-cyan" style="color:black;opacity:1;margin-top:5%;">Contact Us</button></a>
+					
+					</div>
+				</div>
+
+				<section class="text-gray-600 body-font"  style="background-color:#01112A;border-radius:1%;clear:both;" id="abc">
+			<p style="margn-left:54%;"><a href="http://www.ieee.org/portal/pages/about/documentation/copyright/cfrmlink.html"><button class="w3-button w3-cyan">Send a message</button></a></p><br>
+	 		<div class="container px-5 py-2 mx-auto">
+		    	<div class="flex flex-wrap -m-4">
+		    		<div class="p-4 lg:w-1/3">
+	       				<div class="h-full bg-gray-100 bg-opacity-75 px-4 pt-1 pb-2 rounded-lg overflow-hidden text-center relative" style="background-color:#B6E8E4">
+    	    				  <img src="img/placeholder.png" >
+    	    				  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style="color:black;">Address</h2>
+        						<h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Galgotias College of Engineering and Technology</h1>
+        						<p class="leading-relaxed mb-3">Knowledge Park I, Greater Noida, Uttar Pradesh 201310</p>
+        						<a class="text-indigo-500 inline-flex items-center" href="https://www.google.com/maps/dir/28.4589076,77.497863/28.4571716,77.498378/@28.457172,77.498378,13z?hl=en-IN">Learn More
+        						    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            						<path d="M5 12h14"></path>
+            						<path d="M12 5l7 7-7 7"></path>
+           							</svg>
+        						</a>
+         
+        				</div>
+    				</div>
+    				<div class="p-4 lg:w-1/3">
+       					<div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-1 pb-24 rounded-lg overflow-hidden text-center relative"  style="background-color:#B6E8E4">
+        				   <img src="img/phone-call.png" >
+        					<h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style="color:black;">Contact</h2>
+        					<h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Phone Number</h1> 
+        					<p class="leading-relaxed mb-3">+91-120-437000</p>
+        					<a class="text-indigo-500 inline-flex items-center" href="tel:+91-120-437000">Learn More
+            					<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            					<path d="M5 12h14"></path>
+            					<path d="M12 5l7 7-7 7"></path>
+            					</svg>
+        					</a>
+          
+        				</div>
+    				</div>
+    				<div class="p-4 lg:w-1/3">
+        				<div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-1 pb-24 rounded-lg overflow-hidden text-center relative"  style="background-color:#B6E8E4">
+        					<img src="img/email.png" >
+            				<h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style="color:black;">Send a message</h2>
+            				<h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Mail to us at</h1>
+            				<p class="leading-relaxed mb-3">sanjeeevkumar@galgotiacollege.edu</p>
+            				<a class="text-indigo-500 inline-flex items-center" href="mailto:sanjeeevkumar@galgotiacollege.edu">Learn More
+            					<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                				<path d="M5 12h14"></path>
+              					<path d="M12 5l7 7-7 7"></path>
+            					</svg>
+          					</a>
+      
+        				</div>
+      				</div>
+    			</div>
+  			</div>
+		</section>
+
 				
 			</div>
-			
-			<div class="grid-child address">
-				
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23210.59720745817!2d77.50119125684321!3d28.437044111462235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x548952c90b21eae1!2sEngineering%20Colleges%20in%20Noida%20(Galgotia%20Engineering%20College%20Counseling)!5e0!3m2!1sen!2sin!4v1612262953297!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
+			<div class="row justify-content-center pb-3 m-2">
 					
-			</div>	
-			<p style="margn-left:54%;"><a href="http://www.ieee.org/portal/pages/about/documentation/copyright/cfrmlink.html"><button class="w3-button w3-cyan">Send a message</button></a></p><br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23210.59720745817!2d77.50119125684321!3d28.437044111462235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x548952c90b21eae1!2sEngineering%20Colleges%20in%20Noida%20(Galgotia%20Engineering%20College%20Counseling)!5e0!3m2!1sen!2sin!4v1612262953297!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+			</div>
 		</div>
-		<div class="main">	
-			
-				</section>
-				
-<section class="text-gray-600 body-font"  style="background-color:#01112A;border-radius:1%;clear:both;" id="abc">
-  <div class="container px-5 py-2 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-4 pt-1 pb-2 rounded-lg overflow-hidden text-center relative" style="background-color:#B6E8E4">
-          <img src="img/placeholder.png" >
-          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style="color:black;">Address</h2>
-          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Galgotias College of Engineering and Technology</h1>
-          <p class="leading-relaxed mb-3">Knowledge Park I, Greater Noida, Uttar Pradesh 201310</p>
-          <a class="text-indigo-500 inline-flex items-center" href="https://www.google.com/maps/dir/28.4589076,77.497863/28.4571716,77.498378/@28.457172,77.498378,13z?hl=en-IN">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-         
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-1 pb-24 rounded-lg overflow-hidden text-center relative"  style="background-color:#B6E8E4">
-           <img src="img/phone-call.png" >
-          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style="color:black;">Contact</h2>
-          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Phone Number</h1> 
-          <p class="leading-relaxed mb-3">+91-120-437000</p>
-          <a class="text-indigo-500 inline-flex items-center" href="tel:+91-120-437000">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-1 pb-24 rounded-lg overflow-hidden text-center relative"  style="background-color:#B6E8E4">
-           <img src="img/email.png" >
-          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style="color:black;">Send a message</h2>
-          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Mail to us at</h1>
-          <p class="leading-relaxed mb-3">sanjeeevkumar@galgotiacollege.edu</p>
-          <a class="text-indigo-500 inline-flex items-center" href="mailto:sanjeeevkumar@galgotiacollege.edu">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-      
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+	</section>
+
+
 	</body>
