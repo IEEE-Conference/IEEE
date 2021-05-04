@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<meta charset="utf-8">
 	<title>contact us</title>
 	<!-- added -->
@@ -201,7 +202,7 @@
 		<!-- added -->
 		<div class="container-fluid">
 			<img src="img/antoine-barres-jay5BqVyf5A-unsplash.jpg" class="img-fluid" alt="...">
-					<h2 style="position: absolute;
+					<h2 data-aos="fade-up" style="position: absolute;
 					top: 215px;
 					/* background: brown; */
 					left: 66%;
@@ -209,7 +210,7 @@
 					font-weight: bold;
 					font-size: 49px">Hi,<span style="color: #3C358D;
     font-weight: bold;">there!</span></h2>
-					<p><a class="contactAnchor" href="#abc"> Contact us</a></p>
+					<p><a data-aos="zoom-in" class="contactAnchor" href="#abc"> Contact us</a></p>
 			<!-- <a href="#abc"><button class="w3-button w3-cyan"
 				style="color:black;opacity:1;margin-top:5%;">Contact Us</button></a> -->
 				<!-- <button type="button" class="btn btn-outline-dark">Dark</button> -->
@@ -313,6 +314,13 @@
 	</section>
 </div>
 <!-- div end here -->
-
+<!-- Animation script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+	offset: 250, // offset (in px) from the original trigger point
+	duration: 1000,
+  });
+</script>
 
 </body>
