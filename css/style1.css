@@ -127,7 +127,7 @@ nav{
     width:400%;
     margin:0;
     left:0;
-    animation: 16s slider infinite;
+    animation: 16s slider ease-out infinite;
 }
 .slider div img{
     float:left;
