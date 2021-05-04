@@ -204,7 +204,7 @@ nav{
     color: #0E7AC4
 }
 .aboutCollege section{
-    padding:190px 100px 50px 100px;
+    padding:190px 100px 0px 100px;
     text-align:justify;
     color:black;
     font-size: 18px;
@@ -217,12 +217,12 @@ nav{
 }
 .aboutDept img{
     float:right;
-    padding:50px 100px 0 0;
+    padding:0px 100px 0 0;
     width:150px;
     height:100px;
 }
 .aboutDept section{
-    padding:190px 100px 40px 100px;
+    padding:160px 100px 40px 100px;
     text-align:justify;
     color:black;
     font-size: 18px;
@@ -233,7 +233,7 @@ nav{
 .aboutCon h1{
     color:#0E7AC4;
     text-align: center;
-    padding:40px 0 0px 0;
+    padding:00px 0 0px 0;
 }
 .aboutCon section{
     text-align:justify;
