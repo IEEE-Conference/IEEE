@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style1.css">
@@ -103,8 +104,8 @@
     <div class="container">
         <div class="aboutCollege">
             <img src="img/galLogo.png" alt="" class="clgLogo">
-            <h1>About The Institution</h1>
-            <section>
+            <h1 data-aos="fade-left">About The Institution</h1>
+            <section data-aos="fade-up">
                 Galgotias College of Engineering & Technology (GCET) were founded by Smt. Shakuntla Educational and Welfare Society.
                 Mr. Suneel Galgotia, a resolute visionary, committed to provide world class technical and management education is the
                 founder Chairman, apart from being the Chancellor of Galgotias University and Managing Director of Galgotia Publications 
@@ -123,9 +124,9 @@
         </div>
 
         <div class="aboutDept">
-            <h1>About The Department</h1>
+            <h1 data-aos="fade-right">About The Department</h1>
             <!--img src="img/fusion logo.png" alt="" class="clgLogo"-->
-            <section>
+            <section data-aos="fade-up">
                 The department of Information Technology offers engineering programme at the undergraduate as well as at the post 
                 graduate levels. The course is designed to provide comprehensive knowledge of information technology with emphasis on 
                 applications together with a judicious blend of technical skills. The department emphasis the use of learning tools for 
@@ -155,9 +156,9 @@
         </div>
 
         <div class="aboutCon">
-            <h1>About The IEEE Conference</h1>
+            <h1 data-aos="slide-up">About The IEEE Conference</h1>
             <!-- <img src="images/IEEElogo.svg" alt="" class="clgLogo"> -->
-            <section>
+            <section data-aos="fade-up">
                 The 1st International Conference on Advancements in Computing, Communication and Technology (ICACCT -2022), will be held 
 		    at Galgotias College of Engineering and Technology, Greater Noida, Uttar Pradesh, on 22-23 April 2022. The objective of 
 		    the conference is to provide an international open forum for the scientists, researchers and technocrats in academia and 
@@ -176,7 +177,14 @@
 
     </div>
 
-
+<!-- Animation script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250, // offset (in px) from the original trigger point
+        duration: 1000,
+      });
+    </script>
 
 </body>
 </html>
