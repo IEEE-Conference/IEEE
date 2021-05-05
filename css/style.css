@@ -32,13 +32,17 @@ body{
     margin: auto;
 }
 
-.collegeLogo{
-    position:relative;
-    left:50%;
-    transform:translate(-50%);
-    width:180px;
+/* logo container */
+.icacctLogo,.collegeLogo,.ieeeLogo{
     height:55px;
+    width:160px;
 }
+.logoContainer{
+    display:flex;
+    justify-content: space-around;
+}
+
+/* navbar */
 
 nav{
     height:50px;
