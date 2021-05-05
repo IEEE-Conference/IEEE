@@ -5,20 +5,19 @@ body{
     margin:0;
     padding:0;
 }
-.collegeLogo{
-    position:relative;
-    left:120px;
-    transform:translate(-50%);
-    width:180px;
+
+/* logo container */
+
+.icacctLogo,.collegeLogo,.ieeeLogo{
     height:55px;
+    width:160px;
 }
-.ieeeLogo{
-    position:absolute;
-    right:0%;
-    transform:translate(-20%,10%);
-    width:180px;
-    height:50px;
+.logoContainer{
+    display:flex;
+    justify-content: space-around;
 }
+
+/* navbar */
 
 nav{
     height:50px;
