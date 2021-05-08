@@ -140,22 +140,58 @@ nav{
     float:left;
     width:25%;
     height:100vh;
-    filter: brightness(0.5);
+    filter: brightness(0.3);
     
 }
 
 @keyframes slider{
     0% {
         left:0;
-    } 
-    25% {
+    }
+    12%{
+        left:0;
+    }
+
+    15% {
         left:-100%;
     }
-    50% {
+    27% {
+        left:-100%;
+    }
+
+    30% {
         left:-200%;
     }
-    75% {
+    42% {
+        left:-200%;
+    }
+
+    45% {
         left:-300%;
+    }
+    47% {
+        left:-300%;
+    }
+
+    50% {
+        left:-300%;
+    }
+    67% {
+        left:-300%;
+    }
+
+    70% {
+        left:-200%;
+    }
+    82% {
+        left:-200%;
+    }
+
+    85% {
+        left:-100%;
+    }
+    97% {
+        left:-100%;
     }
     100% {
         left:0;
