@@ -198,6 +198,7 @@ nav{
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
+    line-height: 1.3;
 }
 .aboutCollege img{
     float:left;
