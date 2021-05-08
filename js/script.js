@@ -1,5 +1,5 @@
 function shrink(){
-    document.querySelector(".popup").style.bottom="-200px";
+    document.querySelector(".popup").style.bottom="-208px";
     document.querySelector(".popupHeading").style.borderRadius=("48px 48px 0 0");
     document.querySelector(".cross").style.opacity="0";
 
