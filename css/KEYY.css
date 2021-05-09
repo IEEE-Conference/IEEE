@@ -64,6 +64,7 @@
   font-size: 30px;
   width: 10vw;
   height: 10vh;
+  margin-top:5vh;
   text-align: center;
   text-decoration: none;
 }
@@ -81,6 +82,7 @@
 .fa-instagram{
   background:#fb3958 ;
   color:white;
+ margin-right:15vw;
 }
 /*Linked in*/
 .fa-linkedin{
@@ -91,4 +93,5 @@
 .fa-envelope{
   background:red;
   color:white;
+ margin-right:15vw;
 }
