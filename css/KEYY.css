@@ -74,4 +74,21 @@
 .fa {
  display:none;
 }
+ /* Twitter */
+.fa-twitter {
+ display:none;
+}
+/*Instagram */
+.fa-instagram{
+  display:none;
+}
+/*Linked in*/
+.fa-linkedin{
+ display:none;
+} 
+/*E-Mail*/
+.fa-envelope{
+display:none;
+}
+
 }
