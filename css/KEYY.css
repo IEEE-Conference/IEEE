@@ -64,7 +64,7 @@
   font-size: 30px;
   width: 10vw;
   height: 10vh;
-  margin-top:5vh;
+
   text-align: center;
   text-decoration: none;
 }
@@ -77,12 +77,14 @@
 .fa-twitter {
   background: #55ACEE;
   color: white;
+   margin-top:5vh;
 }
 /*Instagram */
 .fa-instagram{
   background:#fb3958 ;
   color:white;
  margin-right:15vw;
+   margin-top:5vh;
 }
 /*Linked in*/
 .fa-linkedin{
