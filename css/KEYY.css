@@ -79,27 +79,23 @@
 /* Set a specific color for each brand */
 /* Twitter */
 .fa-twitter {
- disply:inline-block;
   background: #55ACEE;
   color: white;
 }
 /*Instagram */
 .fa-instagram{
- disply:inline-block;
   background:#fb3958 ;
   color:white;
   
 }
 /*Linked in*/
 .fa-linkedin{
- disply:inline-block;
   background:#0e76a8;
   color: white;
 
 } 
 /*E-Mail*/
 .fa-envelope{
- disply:inline-block;
   background:red;
   color:white;
 }
