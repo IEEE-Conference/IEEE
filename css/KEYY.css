@@ -78,14 +78,12 @@
  disply:inline-block;
   background: #55ACEE;
   color: white;
-   margin-top:5vh;
 }
 /*Instagram */
 .fa-instagram{
  disply:inline-block;
   background:#fb3958 ;
   color:white;
- margin-right:15vw;
   
 }
 /*Linked in*/
@@ -93,12 +91,11 @@
  disply:inline-block;
   background:#0e76a8;
   color: white;
-  margin-top:5vh;
+
 } 
 /*E-Mail*/
 .fa-envelope{
  disply:inline-block;
   background:red;
   color:white;
- margin-right:15vw;
 }
