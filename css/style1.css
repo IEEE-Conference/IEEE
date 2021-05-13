@@ -163,6 +163,7 @@ nav{
     overflow:hidden;
     position:relative;
     padding-bottom: 10px;
+    z-index:-1;
 }
 .slider div{
     position:relative;
