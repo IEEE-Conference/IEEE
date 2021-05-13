@@ -70,6 +70,7 @@ nav{
     padding-left:5px;
     margin-left:20px;
     transition: 300ms;
+    z-index: 100;
 }
 .submenu{
     display:none;
@@ -81,7 +82,7 @@ nav{
 }
 
 .submenu a:hover{
-    text-decoration: underline;
+   color: slategray;
 }
 
 .submenuClass:hover .submenu {
