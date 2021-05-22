@@ -129,8 +129,8 @@ body {
 @media only screen and (max-width:768px)
 {
  .team-img{
- width:inherit;
-  height:30vh;
+ width:100%;
+  height:35vh;
  }
 }
  
