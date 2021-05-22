@@ -129,7 +129,6 @@ body {
 @media only screen and (max-width:768px;)
 {
  .team-img{
- width:180vw;
   height:32vh;
  }
 }
