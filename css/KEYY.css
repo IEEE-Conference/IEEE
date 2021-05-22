@@ -130,6 +130,7 @@ body {
 {
  .team-img{
   display:inline-block;
+  text-align:center;
   height:32vh;
   width:80vw;
  }
